@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variable examples</title>
+</head>
+<body>
+  <!-- Content goes here. -->
+
+  <!-- Scripts go here. -->
+  <script type="text/javascript">
+
+  (function(){
+
+    let answer = prompt("give me a number between 1 and 10");
+
+
+
+    if (typeof parseInt(answer) != "number") {
+      console.log("read the directions. You didn't supply a number");
+    }
+
+    if (answer <= 1 && answer >= 10) {
+      console.log("Wrong");
+    }
+
+    console.log("Thanks for the number and follow the rules");
+
+  })();
+
+  </script>
+
+
+  <!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
+</body>
+</html>

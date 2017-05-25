@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+#triangle-right {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 1;
+  top: 250px;
+  left: 8%;
+  border-top: 200px solid transparent;
+  border-left: 300px solid white;
+  border-bottom: 200px solid transparent;
+  opacity: 0.3; }
+
+.jumbotron {
+  background-image: url("../../assets/images/hero_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 900px;
+  margin: 0 0 0 0;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 10%; }
+  .jumbotron .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2; }
+    .jumbotron .container h1 {
+      font-size: 80px;
+      font-family: Ubuntu, cursive;
+      color: white;
+      font-weight: 700;
+      line-height: 1.2; }
+    .jumbotron .container h3 {
+      font-size: 40px;
+      font-family: Anton, sans-serif;
+      color: #2d2d2d;
+      letter-spacing: 2px; }
+    .jumbotron .container a {
+      font-size: 15px;
+      text-decoration: none;
+      color: #f206e9;
+      letter-spacing: 2px; }
+    .jumbotron .container a span {
+      color: white;
+      font-size: 50px;
+      position: relative;
+      top: 18px; }
+
+#hiddenNav {
+  display: none; }
+
+@media (max-width: 1280px) {
+  #navContainer {
+    visibility: hidden; }
+
+  #hiddenNav {
+    display: block; } }
+.dropdown a {
+  background-color: white; }
+.dropdown #dropdown:hover {
+  background-color: white; }
+.dropdown .glyphicon {
+  color: black;
+  font-size: 20px; }
+
+#navBarText {
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+#navContainer {
+  position: relative;
+  top: -120px;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 1px;
+  background-color: white;
+  opacity: .65;
+  z-index: 99;
+  padding-bottom: 3%; }
+  #navContainer a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    height: 90px;
+    background-color: inherit; }
+  #navContainer .active {
+    background-color: #343434;
+    opacity: .9;
+    width: 3%; }
+  #navContainer #active {
+    color: white; }
+  #navContainer a:hover {
+    border-bottom: 2px solid black; }
+
+@media (max-width: 767px) {
+  .container-fluid {
+    height: 55px; }
+    .container-fluid .dropdown-toggle {
+      height: 56px; }
+    .container-fluid span {
+      position: relative;
+      top: 7px; }
+    .container-fluid ul {
+      width: 300px;
+      position: relative;
+      left: 14px;
+      top: -10px;
+      height: 50px; }
+    .container-fluid li {
+      width: 50px; }
+    .container-fluid p {
+      position: relative;
+      top: -56px;
+      left: 64px; } }
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -100px;
+  height: 500px; }
+  .cardContainer .card {
+    box-shadow: 2px 2px 10px lightgray;
+    padding: 0 0 0 0;
+    height: 480px;
+    width: 1200px;
+    margin: 0 0 0 0;
+    position: relative; }
+  .cardContainer .weirdTag {
+    background: black;
+    border-radius: 15px 0 30px 15px;
+    content: '';
+    height: 15px;
+    position: relative;
+    top: 100px;
+    left: -375px;
+    width: 40px;
+    opacity: .7; }
+  .cardContainer #container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 480px;
+    width: 1200px; }
+  .cardContainer #box1 {
+    flex: .75;
+    height: 100%;
+    border-right: 1px #ccc solid; }
+    .cardContainer #box1 p {
+      height: 24%;
+      padding: 0 4% 0 4%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 24px;
+      font-size: 14px;
+      letter-spacing: 1px; }
+    .cardContainer #box1 img {
+      width: 100%; }
+  .cardContainer #box2 {
+    flex: 1;
+    height: 100%;
+    border-right: 1px #ccc solid; }
+    .cardContainer #box2 #aboutMe {
+      height: 450px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: wrap; }
+    .cardContainer #box2 table {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .cardContainer #box3 {
+    flex: .1; }
+    .cardContainer #box3 #contactOptions {
+      height: 480px;
+      font-size: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      opacity: .6; }
+      .cardContainer #box3 #contactOptions a {
+        color: black; }
+  .cardContainer #skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .cardContainer #skills #box4 {
+      flex: 1.37;
+      height: 100%;
+      border-right: 1px #ccc solid; }
+      .cardContainer #skills #box4 h2 {
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+      .cardContainer #skills #box4 #skillContent {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 3% 3% 3% 3%; }
+    .cardContainer #skills #box5 {
+      flex: 2;
+      height: 100%; }
+      .cardContainer #skills #box5 #skillBars {
+        height: 100%;
+        width: 90%;
+        padding-left: 5%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        text-transform: uppercase;
+        color: gray; }
+        .cardContainer #skills #box5 #skillBars #header {
+          flex: 1;
+          height: 93%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          .cardContainer #skills #box5 #skillBars #header h2 {
+            font-size: 15px;
+            margin-left: 25%; }
+        .cardContainer #skills #box5 #skillBars #progress {
+          flex: 2;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; }
+          .cardContainer #skills #box5 #skillBars #progress .progress-bar {
+            background: lightgray;
+            color: black;
+            position: relative; }
+          .cardContainer #skills #box5 #skillBars #progress h5 {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            top: -10px;
+            color: black; }
+
+@media (max-width: 1280px) {
+  .cardContainer #container, #skills {
+    width: 1024px; }
+    .cardContainer #container #aboutMe h2, #skills #aboutMe h2 {
+      position: relative;
+      left: -50px; } }
+@media (max-width: 1060px) {
+  .cardContainer #container, #skills {
+    width: 800px; }
+    .cardContainer #container .weirdTag, #skills .weirdTag {
+      top: 70px;
+      left: -330px; }
+    .cardContainer #container #aboutMe h2, #skills #aboutMe h2 {
+      position: relative;
+      left: -50px; } }
+@media (max-width: 840px) {
+  .cardContainer #container {
+    width: 540px;
+    flex-direction: column; }
+    .cardContainer #container .weirdTag {
+      top: 70px;
+      left: -365px; }
+    .cardContainer #container #box1 {
+      height: 471px;
+      margin: 0 0 0 0;
+      padding: 0 0 180px 0;
+      flex-direction: column;
+      flex-flow: wrap; }
+    .cardContainer #container #box2 {
+      box-shadow: 2px 2px 10px lightgray;
+      position: relative;
+      top: 10px; }
+      .cardContainer #container #box2 #aboutMe {
+        height: 400px; }
+        .cardContainer #container #box2 #aboutMe h2 {
+          position: relative;
+          left: -35px; }
+    .cardContainer #container #box3 {
+      width: 100%;
+      box-shadow: 2px 2px 10px lightgray;
+      position: relative;
+      top: 10px; }
+    .cardContainer #container #contactOptions {
+      flex-direction: row;
+      height: 90px;
+      align-items: center; }
+  .cardContainer #skills {
+    width: 540px;
+    height: 600px;
+    display: block;
+    top: 500px; }
+    .cardContainer #skills #box4 {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+    .cardContainer #skills #box5 {
+      width: 100%;
+      height: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+@media (max-width: 768px) {
+  .cardContainer #container {
+    display: block;
+    justify-content: space-between;
+    margin-top: 10%; }
+
+  #skills {
+    display: block;
+    margin-top: 25%;
+    margin-bottom: 10%; }
+    #skills #box4 {
+      border-bottom: 1px solid lightgray; } }
+@media (max-width: 640px) {
+  .cardContainer #container {
+    width: 360px;
+    flex-direction: column; }
+    .cardContainer #container .weirdTag {
+      top: 60px;
+      left: -270px; }
+    .cardContainer #container #box1 {
+      margin: 0 0 0 0;
+      padding: 0 0 70px 0;
+      flex-direction: column;
+      flex-flow: wrap; }
+      .cardContainer #container #box1 p {
+        height: 40%; }
+    .cardContainer #container #box2 {
+      box-shadow: 2px 2px 10px lightgray; }
+      .cardContainer #container #box2 #aboutMe {
+        height: 400px; }
+        .cardContainer #container #box2 #aboutMe h2 {
+          position: relative;
+          left: -35px; }
+    .cardContainer #container #box3 {
+      width: 100%;
+      box-shadow: 2px 2px 10px lightgray; }
+
+  .cardContainer #skills {
+    margin-top: 30%;
+    width: 360px; }
+    .cardContainer #skills #box5 #header {
+      position: relative;
+      left: -30px;
+      top: -5px; } }
+
+/*# sourceMappingURL=common.css.map */
